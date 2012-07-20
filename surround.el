@@ -20,6 +20,9 @@
 ;; for things like `ds)` behavior, paredit does the trick
 ;; 
 ;; -- natto 2012-07-16 23:47:46
+;;
+;; do something like this after load
+;; (global-set-key "\C-cs" 'surround-change-wrap)
 
 (defun surround-change-wrap ()
   (interactive)
@@ -44,6 +47,4 @@
         )
       ))
   )
-
-(global-set-key "\C-ci" 'surround-change-wrap)
 
